@@ -6,8 +6,8 @@
 .contact {
     display: inline-block;
     position: relative;
-    width: 300px;
-    height: 100%;
+    width: 250px;
+    
     background-color:#37156d;
 }
 
@@ -23,16 +23,22 @@ a {
     text-decoration: none;
     color: #FFFFFF;
 }
+li:hover {
+    
+    font-size: 25px;
+    
+}
 
 .profilepic {
     width: 100%;
     margin-top:  1px;
-    margin-bottom: 68px;
+    margin-bottom: 20px;
     border-radius: 65px;
        }
 .titles {
     position: relative;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-bottom: 40px;
     line-height: 39px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -41,24 +47,43 @@ a {
     font-style: normal;
     font-weight: 700;
 }
+@keyframes teste {
+    0%   {background-color: #37156d;}
+    25%  {background-color: #523580;}
+    50%  {background-color: #786991;}
+    100% {background-color: #aea9b6;}
+}
+.titles:hover {
+    animation-name: teste;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
 hr {
     border: 1px solid #6CD0DB;
     display: block;
-    margin-top: 50px;
+    margin-top: 150px;
     border-style: inset;
     border-width: 1px;
     
 }
+.bottom {
+    display: block;
+    position: relative;
+    bottom: 0;
+    background:url(./img/bg.jpg);
+    margin-bottom: none;
+}
 .titles2 {
+    
     position: relative;
     margin-left: 40px;
-    margin-top: 44px;
-    margin-bottom:19.5px;
+    margin-top: 15px;
+    margin-bottom:10px;
     line-height: 39px;
     text-transform: uppercase;
     color: #FFFFFF;
     font-family: montserrat;
-    font-size: 32px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
 }
