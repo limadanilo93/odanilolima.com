@@ -10,6 +10,12 @@
     
     background-color:#37156d;
 }
+.profilepic {
+    width: 100%;
+    margin-top:  1px;
+    margin-bottom: 20px;
+    border-radius: 65px;
+       }
 
 .navegacao li{
     margin-top: 15px;
@@ -29,15 +35,10 @@ li:hover {
     
 }
 
-.profilepic {
-    width: 100%;
-    margin-top:  1px;
-    margin-bottom: 20px;
-    border-radius: 65px;
-       }
+
 .titles {
     position: relative;
-    margin-left: 20px;
+    text-align: center;
     margin-bottom: 40px;
     line-height: 39px;
     text-transform: uppercase;
@@ -71,6 +72,7 @@ hr {
     position: relative;
     bottom: 0;
     background:url(./img/bg.jpg);
+    background-attachment: scroll;
     margin-bottom: none;
 }
 .titles2 {
@@ -90,6 +92,7 @@ hr {
 .subInf {
     line-height: 39.0px;
     margin-left: 40px;
+    margin-top: 20px;
     text-transform: uppercase;
     color: #6CD0DB;
     font-family: 'Crimson Text Regular';
@@ -100,7 +103,6 @@ hr {
     line-height: 21.72px;
     margin-left: 40px;
     margin-right: 68px;
-    margin-bottom: 25px;
     color: #ffffff;
     font-family: 'Crimson Text Regular';
     font-size: 16px;
