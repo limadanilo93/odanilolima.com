@@ -39,8 +39,30 @@
         </div> 
 
     </div>
-    <div class="principal3">
-       
+    <div class="principalContato">
+        <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <label for="name">Nome e Sobrenome</label>
+            <input type="text" id="from_name" class="input-text" placeholder="Digite aqui" name="from_name">
+            <label for="reply_to">E-mail</label>
+            <input type="text" id="reply_to" placeholder="Email" class="input-text" name="reply_to">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" placeholder="Telefone" class="input-text" name="telefone">
+            <label for="message">Mensagem</label>
+            <textarea id="message" placeholder="Digite sua mensagem" cols="80" rows="10" class="input-text" name="message"></textarea>
+            <div class="contacts">
+                <p>Como prefere o contato?</p>
+                <label for="formaEmail"> <input type="radio" name="contact" id="formaEmail" value="email">Email</label>
+                <label for="formaWapp"> <input type="radio" name="contact" id="formaWapp" value="WhatsApp">WhatsApp</label>
+               <label for="formaTelefone"><input type="radio" name="contact" id="formaTelefone" value="telefone">Telefone</label>
+            </div>
+                <label><input type="checkbox" class="check" name="newsletter"> Gostaria de receber novidades por email?</label>
+                <input type="submit" id="enviar">
+            
+            
+        </form>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="./appcontact.js"></script>
     </div>
    
 </body>
