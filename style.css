@@ -109,7 +109,7 @@ hr {
     font-style: normal;
 
 }
-.principal, .principalContato {
+.principal {
     display: inline-block;
     position: absolute;
     width: auto;
@@ -175,6 +175,9 @@ section {
     form {
         margin: 40px;
         align-items: center;
+    }
+    #contact-form {
+        display: block;
     }
     form label, p {
         display: block;
