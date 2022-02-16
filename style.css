@@ -3,7 +3,7 @@
     src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 
-.contact {
+.sidebar-open {
     display: inline-block;
     position: relative;
     width: 250px;
