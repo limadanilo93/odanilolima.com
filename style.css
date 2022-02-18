@@ -6,11 +6,43 @@
                         /* Sidebar Styles */
 /* =================================================================*/
 
+.sidebar {
+    position: relative;
+    max-width: 250px;
+    background-color:#37156d;
+}
+.menu {
+    position: relative;
+    margin: 10px;
+    
+}
+.menu line {
+        stroke: #FFFFFF;
+}
 /* ==========================*/
 /*   Sidebar fechada styles  */
 /* ==========================*/
 .sidebar-collapsed {
-
+    position: inherit;
+    width: 50px;
+    opacity: 1;
+    background-color:#37156d;
+    height: 100%;
+}
+.botao-Celular{
+    position: relative;
+    width: 90%;
+    z-index: 2;
+}
+.botao-Email{
+    position: relative;
+    width: 90%;
+    z-index: 2;
+}
+.botao-Endereco{
+    position: relative;
+    width: 90%;
+    z-index: 2;
 }
 
 /* ==========================*/
@@ -18,18 +50,19 @@
 /* ==========================*/
 
 .sidebar-open {
-    display: flex;
-    position: relative;
     width: 250px;
-    
     background-color:#37156d;
-}
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(0,-150px)
+    }
 .profilepic {
-    width: 100%;
+    width: 90%;
     margin-top:  1px;
     margin-bottom: 20px;
+    margin-left: 5%;
     border-radius: 65px;
-       }
+}
 
 .navegacao li{
     margin-top: 15px;
