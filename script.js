@@ -1,12 +1,11 @@
-/* function init() {
-const hamburger = document.querySelector(".menu");
-  const hamburgerLines = document.querySelectorAll(".menu line");
-  const profilePic = document.querySelectorAll('.profilepic')
-  const navOpen = document.querySelector(".sidebar-open");
-  const bottom = document.querySelector(".bottom");
-  const sidebar = document.querySelector(".sidebar");
-  const sidebarCollapsed = document.querySelector(".sidebar-collapsed");
-  const botaoEmail = document.querySelector(".botao-Email");
+function init() {
+  const hamburger = document.querySelector(".hamburguer");
+  const cabecalho = document.querySelectorAll('.cabecalho')
+  const navigation = document.querySelector(".collapsable");
+  const options = document.querySelector(".options");
+  const menu = document.querySelector(".sections__menu");
+  const menuItens = document.querySelectorAll(".sections__iten");
+  const mainContent = document.querySelector(".principal");
   const botaoEndereco = document.querySelector(".botao-Endereco");
   const botaoTelefone = document.querySelector(".botao-Celular");
 
@@ -45,10 +44,10 @@ const hamburger = document.querySelector(".menu");
         "-=1"
       )
 
-  sidebar.addEventListener("click", () => {
+  cabecalho.addEventListener("click", () => {
     tl.reversed() ? tl.play() : tl.reverse();
     
   });
   
 }
-init(); */
+init();
