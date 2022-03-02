@@ -1,4 +1,4 @@
-function init() {
+/* function init() {
 const hamburger = document.querySelector(".menu");
   const hamburgerLines = document.querySelectorAll(".menu line");
   const profilePic = document.querySelectorAll('.profilepic')
@@ -51,4 +51,4 @@ const hamburger = document.querySelector(".menu");
   });
   
 }
-init();
+init(); */
