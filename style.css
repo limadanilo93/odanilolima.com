@@ -2,245 +2,190 @@
     font-family: montserrat;
     src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
-/* =================================================================*/
-                        /* Sidebar Styles */
-/* =================================================================*/
-
-.sidebar {
-    display: inline-block;
-    position: relative;
-    max-width: 250px;
-    background-color:#37156d;
-    height: 100%;
+:root {
+    font-size: 10px;
 }
-.menu {
-    position: relative;
-    margin: 10px;
-    
-}
-.menu:hover{
-    cursor: pointer;
-}
-.menu line {
-        stroke: #FFFFFF;
-}
-/* ==========================*/
-/*   Sidebar fechada styles  */
-/* ==========================*/
-.sidebar-collapsed {
-    position: inherit;
-    width: 50px;
-    opacity: 1;
-    background-color:#37156d;
-    height: 100%;
-}
-.botao-Celular{
-    position: relative;
-    width: 90%;
-    z-index: 2;
-}
-.botao-Email{
-    position: relative;
-    width: 90%;
-    z-index: 2;
-}
-.botao-Endereco{
-    position: relative;
-    width: 90%;
-    z-index: 2;
-}
-
-/* ==========================*/
-/*   Sidebar open styles     */
-/* ==========================*/
-
-.sidebar-open {
-    width: 250px;
-    background-color:#37156d;
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(0,-150px)
-    }
-.profilepic {
-    width: 90%;
-    margin-top:  1px;
-    margin-bottom: 20px;
-    margin-left: 5%;
-    border-radius: 65px;
-}
-
-.navegacao li{
-    margin-top: 15px;
-    font-size: 20px;
-    margin-left: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    
-}
-a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-li:hover {
-    
-    font-size: 25px;
-    
-}
-
-
-.titles {
-    position: relative;
-    text-align: center;
-    margin-bottom: 40px;
-    line-height: 39px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-family: montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-}
-@keyframes teste {
-    0%   {background-color: #37156d;}
-    25%  {background-color: #523580;}
-    50%  {background-color: #786991;}
-    100% {background-color: #aea9b6;}
-}
-.titles:hover {
-    animation-name: teste;
-    animation-duration: 0.6s;
-    animation-iteration-count: 5;
-    font-size: 2.1rem;
-    }
-hr {
-    border: 1px solid #6CD0DB;
-    display: block;
-    margin-top: 150px;
-    border-style: inset;
-    border-width: 1px;
-    
-}
-.bottom {
-    justify-self: end;
-    display: block;
-    position: relative;
+body {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    top: 22vh;
-    background:url(./img/bg.jpg);
-    background-attachment: scroll;
-    margin-bottom: none;
+    min-height: 100vh;
+    background-image: url("./img/white-concrete-wall.jpg");
+    justify-content: space-between;
 }
-.titles2 {
+
+/* =================================================================*/
+                        /* Menu Styles */
+/* =================================================================*/
+.collapsable {
+    display: flex;
+    flex-direction: column;
+    background: rgba(224, 244, 255, 0.5);
+    position: sticky;
     
-    position: relative;
-    margin-left: 40px;
-    margin-top: 15px;
-    margin-bottom:10px;
-    line-height: 39px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-family: montserrat;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
 }
-.subInf {
-    line-height: 39.0px;
-    margin-left: 40px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    color: #6CD0DB;
-    font-family: 'Crimson Text Regular';
-    font-size: 16px;
-    font-style: normal;
-}
-.data {
-    line-height: 21.72px;
-    margin-left: 40px;
-    margin-right: 68px;
-    color: #ffffff;
-    font-family: 'Crimson Text Regular';
-    font-size: 16px;
-    font-style: normal;
+.hamburguer {
+    stroke: #000;
+    margin: 1rem 0 1rem 1rem;
 
 }
-/* ==========================
-     Sidebar responsivo    
-============================
+.options {
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    transform: translateY(-5vh)
+}
+.sections__menu{
 
-@media (max-width: 768px){
-    .sidebar-open {
-        transform: scale(0.7)
-    }    
-} */
+    padding: 1rem;
+}
+.sections__iten{
+    margin: 0.2rem 1rem;
+    text-align:center;
+    font-size:2rem;
+    font-family: montserrat, sans-serif;
+    font-weight:700;
+}
+.icon__links{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3rem;
+}
+.social__media{
+    margin: 0.2rem 0.5rem
+}
+.link__nav{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+/* ==========================*/
+/*   Menu closed styles  */
+/* ==========================*/
+
+
+/* ==========================*/
+/*   Menu open styles     */
+/* ==========================*/
+
+
 
 /* =================================================================*/
                         /* main content */
 /* =================================================================*/
+
 .principal {
-    display: inline-block;
-    position: absolute;
-    width: auto;
-    height: 100%;
-    
+
+
 }
-
-
-.nome {
-    position: absolute;
-    text-transform: uppercase;
-    color: #ffffff;
+.sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    flex-direction: column;
+}
+.text {
+    text-align: center;
+    width: min(80%, 60ch);
     font-family: montserrat;
-    font-size: 90px;
-    font-style: normal;
+    padding: 1rem 0;
+}
+.text__titulo {
+    padding: 1rem 0;
+    font-size: 2.4rem;
     font-weight: 700;
-    top: 70%;
-    left: 10%;
-    transform: translate(-20%, -70%);
+}
+.text__texto {
+    padding: 1rem 0;
+    font-size:1.6rem;
+    font-weight: 500;
+}
+.text__texto strong {
+    font-weight: 900;
+    color: rgb(134, 29, 29);
+}
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-pic{
+
+    width: min(70%, 30rem);
 }
 
-/* ==========================*/
-/*        Fale Comigo        */
-/* ==========================*/
 
-#contact-form {
-        display: block;
-        margin: 40px;
-        align-items: center;
+
+
+/* Rodape */
+.rodape {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-image: url("./img/bg.jpg");
 }
-form label, p {
-        display: block;
-        font-size: 22px;
-        margin-bottom: 10px;
+.rodape__menu {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+
+
 }
-form div p {
-        font-style: italic;
-        font-weight: bold;
+.no-rodape{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+}
+.copyright{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+@media (min-width: 768px){
+    body {
+
     }
+    .collapsable {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        background: none;
+        position: sticky;
         
-}
-.input-text {
-        display: block;
-        margin-bottom: 10px;
-        padding: 10px;
-        width: 90%;
-}
-.check {
-        margin: 0, 10px;
-}
-.horacontato {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-/* ==========================*/
-/* Fale Comigo - Responsivo  */
-/* ==========================*/
-@media (max-width: 768px) {
-    form label, p {
-        font-size: 16px;
     }
-    #message {
-        width: 300px;
-        height: 200px;
+    .hamburguer {
+        display:none;
+    
+    }
+    .options {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        transform: translateY(0);
+    }
+    .sections__menu{
+        display: flex;
+    }
+
+    .sections{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        align-items:stretch;
+      
+    }
+    .text {
+        text-align: right;
+        width: min(80%, 60ch);
+        margin: 0 1rem;
+        transform: translateY(-80%)
     }
 }
