@@ -5,22 +5,13 @@ const options = document.querySelector(".options");
 const menu = document.querySelector(".sections__menu");
 const sections = document.querySelectorAll(".sections")
 const menuItens = document.querySelectorAll(".sections__iten.inheader");
+const footerItens = document.querySelectorAll(".no-rodape")
 const mainContent = document.querySelector(".principal");
 const botaoEndereco = document.querySelector(".botao-Endereco");
 const botaoTelefone = document.querySelector(".botao-Celular");
 
 function init() {
   const tl = new TimelineMax({ paused: true, reversed: true });
-/*   const ch = new TimelineMax({ paused: true, reversed: true });
-  menuItens.forEach((item, i) => {
-    let nSections = Array.from(sections)
-    nSections.splice(i, 1);
-    ch.to(sections[i], 0.2, {display: 'flex'}, "-=0.1")
-    .to(nSections, 0.2, {display: 'none'}, "+=0.1")
-
-
-    menuItens[i].addEventListener("click", ch.play())
-  }) */
 
 
     if (window.innerWidth<640){
@@ -60,26 +51,52 @@ function init() {
    
     }
     })
-    if (window.innerWidth>=640){
-      menuItens.forEach((item, i) => {
-        item.addEventListener("click", toggle)
-        function toggle(){
-          
-          let nSections = Array.from(sections)
-          nSections.splice(i, 1)
-          nSections.forEach(section => section.style.setProperty("display", "none"))
+    footerItens.forEach((item, i) => {
+      item.addEventListener("click", toggle)
+      function toggle(){
         
-          sections[i].style.setProperty("display", "grid")
-    
-     
-      }
-      })
+        let nSections = Array.from(sections)
+        nSections.splice(i, 1)
+        nSections.forEach(section => section.style.setProperty("display", "none"))
+      
+        sections[i].style.setProperty("display", "flex")
+  
+   
     }
+    })
+    
   
   
     
   }
+  else {
+    menuItens.forEach((item, i) => {
+      item.addEventListener("click", toggle)
+      function toggle(){
+        
+        let nSections = Array.from(sections)
+        nSections.splice(i, 1)
+        nSections.forEach(section => section.style.setProperty("display", "none"))
+      
+        sections[i].style.setProperty("display", "grid")
   
+   
+    }
+    })
+    footerItens.forEach((item, i) => {
+      item.addEventListener("click", toggle)
+      function toggle(){
+        
+        let nSections = Array.from(sections)
+        nSections.splice(i, 1)
+        nSections.forEach(section => section.style.setProperty("display", "none"))
+      
+        sections[i].style.setProperty("display", "grid")
+  
+   
+    }
+    })
+  }
   
   
 
