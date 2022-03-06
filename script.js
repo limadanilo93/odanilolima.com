@@ -1,18 +1,16 @@
+const hamburger = document.querySelector(".hamburguer");
+const cabecalho = document.querySelector('.cabecalho');
+const navigation = document.querySelector(".collapsable");
+const options = document.querySelector(".options");
+const menu = document.querySelector(".sections__menu");
+const menuItens = document.querySelectorAll(".sections__iten");
+const mainContent = document.querySelector(".principal");
+const botaoEndereco = document.querySelector(".botao-Endereco");
+const botaoTelefone = document.querySelector(".botao-Celular");
+const tl = new TimelineMax({ paused: true, reversed: true });
 function init() {
-  const hamburger = document.querySelector(".hamburguer");
-  const cabecalho = document.querySelector('.cabecalho');
-  const navigation = document.querySelector(".collapsable");
-  const options = document.querySelector(".options");
-  const menu = document.querySelector(".sections__menu");
-  const menuItens = document.querySelectorAll(".sections__iten");
-  const mainContent = document.querySelector(".principal");
-  const botaoEndereco = document.querySelector(".botao-Endereco");
-  const botaoTelefone = document.querySelector(".botao-Celular");
 
-  const tl = new TimelineMax({ paused: true, reversed: true });
-
-
-  if (window.innerWidth<768){
+  if (window.innerWidth<640){
     tl.to(options, 0.5, { y: 0 })
     .fromTo(options, 0.2, { opacity: 0}, { opacity: 1}, "-=0.1")
     .fromTo(
@@ -43,15 +41,15 @@ function init() {
  
 }
 function reappear(){
-  const options = document.querySelector(".options");
-  if (window.innerWidth>=768){
-       options.style.setProperty("display", "flex")
-   }
-   else {
-    options.style.setProperty("display", "none")
-   }
+
+  if (window.innerWidth>768){
+  options.style.setProperty("display", "flex");
+  }
+
 }
 init();
-window.onresize = reappear;
+
 screen.orientation.addEventListener('change',  reappear)
+window.onresize = init;
+window.onresize = reappear;
 window.onresize = init;
