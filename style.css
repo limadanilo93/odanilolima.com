@@ -101,6 +101,9 @@ body {
     margin: 2rem 0;
     flex-direction: column;
 }
+.quem-sou, .projetos, .contato{
+    display: none;
+}
 .text {
     text-align: center;
     width: 100%;
@@ -193,13 +196,15 @@ body {
         justify-self: flex-start;
     }
     .sections{
-        display: grid;
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
         align-items: flex-start;
         
 
       
+    }
+    .home {
+        display: grid;
     }
     .sections__iten:hover{
         text-shadow: 0 0 0.3rem rgb(13, 70, 70);
