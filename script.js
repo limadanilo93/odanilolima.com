@@ -12,33 +12,46 @@ function init() {
   const tl = new TimelineMax({ paused: true, reversed: true });
 
 
-if (window.innerWidth<768){
-  tl.to(options, 0.5, { y: 0 })
-  .fromTo(options, 0.2, { opacity: 0}, { opacity: 1}, "-=0.1")
-  .fromTo(
-    options,
-    0.2,
-    { display: 'none' },
-    { display: 'flex' },
-    "-=1"
-  )
-
-  .fromTo(
+  if (window.innerWidth<768){
+    tl.to(options, 0.5, { y: 0 })
+    .fromTo(options, 0.2, { opacity: 0}, { opacity: 1}, "-=0.1")
+    .fromTo(
       options,
       0.2,
-      { pointerEvents: 'none' },
-      { pointerEvents: 'all' },
+      { display: 'none' },
+      { display: 'flex' },
       "-=1"
-  )
+    )
 
-cabecalho.addEventListener("click", () => {
-  tl.reversed() ? tl.play() : tl.reverse();
-  
+    .fromTo(
+        options,
+        0.2,
+        { pointerEvents: 'none' },
+        { pointerEvents: 'all' },
+        "-=1"
+    )
 
-});
+  cabecalho.addEventListener("click", () => {
+    tl.reversed() ? tl.play() : tl.reverse();
+    
 
-}
+  });
+
+
+  }
+
  
 }
-
+function reappear(){
+  const options = document.querySelector(".options");
+  if (window.innerWidth>=768){
+       options.style.setProperty("display", "flex")
+   }
+   else {
+    options.style.setProperty("display", "none")
+   }
+}
 init();
+window.onresize = reappear;
+screen.orientation.addEventListener('change',  reappear)
+window.onresize = init;
