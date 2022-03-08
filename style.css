@@ -116,8 +116,8 @@ body {
     font-weight: 700;
 }
 .text__texto {
-    padding: 1rem 0;
-    font-size:1.6rem;
+    padding: 2rem 0;
+    font-size:1.8rem;
     font-weight: 500;
     width: min(80%, 60ch);
     margin: 0 auto;
@@ -133,7 +133,7 @@ body {
 
 }
 .profile-pic{
-
+    box-shadow: 0 0 0.6rem 0.6rem rgb(32, 161, 161);
     width: min(70%, 30rem);
 }
 

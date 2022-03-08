@@ -12,9 +12,8 @@ const botaoTelefone = document.querySelector(".botao-Celular");
 
 function init() {
   const tl = new TimelineMax({ paused: true, reversed: true });
-
-
-    if (window.innerWidth<640){
+  
+  function mobile(){
       tl.to(options, 0.5, { y: 0 })
       .fromTo(options, 0.2, { opacity: 0}, { opacity: 1}, "-=0.1")
       .fromTo(
@@ -69,7 +68,7 @@ function init() {
   
     
   }
-  else {
+  function desktop() {
     menuItens.forEach((item, i) => {
       item.addEventListener("click", toggle)
       function toggle(){
@@ -97,6 +96,8 @@ function init() {
     }
     })
   }
+  
+  window.innerWidth<640 ? mobile(): desktop();
   
   
 
