@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     background-image: url("./img/white-concrete-wall.jpg");
     justify-content: space-between;
+    font-family: montserrat, sans-serif;
 }
 
 @keyframes aparecer {
@@ -31,7 +32,7 @@ body {
 .collapsable {
     display: flex;
     flex-direction: column;
-    background: rgba(224, 244, 255, 0.5);
+    background: none;
     position: sticky;
     
 }
@@ -58,7 +59,6 @@ body {
     margin: 0.2rem 1rem;
     text-align:center;
     font-size:2rem;
-    font-family: montserrat, sans-serif;
     font-weight:700;
 }
 .icon__links{
@@ -75,6 +75,7 @@ body {
 
 }
 
+
 /* ==========================*/
 /*   Menu closed styles  */
 /* ==========================*/
@@ -90,10 +91,7 @@ body {
                         /* main content */
 /* =================================================================*/
 
-.principal {
 
-
-}
 .sections {
     display: flex;
     justify-content: center;
@@ -112,10 +110,10 @@ body {
 }
 .text__titulo {
     padding: 1rem 0;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 700;
 }
-.text__texto {
+.text__texto, .about__me{
     padding: 2rem 0;
     font-size:1.8rem;
     font-weight: 500;
@@ -137,8 +135,123 @@ body {
     width: min(70%, 30rem);
 }
 
+.quem-sou{
+    flex-direction: column;
+    text-align: center;
+}
+.titulo__stacks{
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 2rem;
+}
+.stacks__su{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
 
+.stacks__icons{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.colored:hover{
+    text-shadow: 0 0 2rem rgba(161, 216, 129, 0.8);
+}
+.colored{
+    font-size: 7rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(80%, 60ch);
+    text-align: center;
+    justify-content:center;
+}
+.project__title{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 2rem;
+}
+.project__description{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+}
+.project__description strong{
+    font-weight: 900;
+    color: rgb(134, 29, 29);
+}
+.link__project{
+    text-decoration: none;
+    font-weight: 900;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: rgb(29, 130, 134);
+}
+.project__img{
+    width: min(70%, 30rem);
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+.alternate__contact{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+.contact__title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 2rem;
+}
+.informacoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+label, input{
+    margin: 1.5rem 0.5rem;
 
+}
+.perguntas{
+    font-weight: 700;
+    margin: 1rem;
+}
+.fa{
+    font-size: 4rem;
+}
+.fa-whatsapp{
+    color: green;
+}
+.alternate__contact__info{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    align-items:center;
+}
+.contato__info{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.enviar{
+    width: min(40rem, 40%);
+    align-self: center;
+}
+.enviar:hover{
+    background: rgba(129, 174, 216, 0.2);
+    box-shadow: 0 0 1.5rem rgba(148, 129, 216, 0.4);;
+}
 
 /* Rodape */
 .rodape {
@@ -226,7 +339,7 @@ body {
     }
     .text__titulo{
         font-size: clamp(2.8rem, -0.083rem + 8vw, 4.5rem);
-        margin: none;
+        margin: 0;
     }
     .text__texto{
         font-size: clamp(1.6rem, -0.085rem + 8vw, 2.8rem);
