@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     background-image: url("./img/white-concrete-wall.jpg");
     justify-content: space-between;
+    font-family: montserrat, sans-serif;
 }
 
 @keyframes aparecer {
@@ -31,7 +32,7 @@ body {
 .collapsable {
     display: flex;
     flex-direction: column;
-    background: rgba(224, 244, 255, 0.5);
+    background: none;
     position: sticky;
     
 }
@@ -58,7 +59,6 @@ body {
     margin: 0.2rem 1rem;
     text-align:center;
     font-size:2rem;
-    font-family: montserrat, sans-serif;
     font-weight:700;
 }
 .icon__links{
@@ -74,6 +74,7 @@ body {
     color: #000000;
 
 }
+
 
 /* ==========================*/
 /*   Menu closed styles  */
@@ -112,10 +113,10 @@ body {
 }
 .text__titulo {
     padding: 1rem 0;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 700;
 }
-.text__texto {
+.text__texto, .about__me{
     padding: 2rem 0;
     font-size:1.8rem;
     font-weight: 500;
@@ -137,8 +138,34 @@ body {
     width: min(70%, 30rem);
 }
 
+.quem-sou{
+    flex-direction: column;
+    text-align: center;
+}
+.titulo__stacks{
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 2rem;
+}
+.stacks__su{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
 
-
+.stacks__icons{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.colored:hover{
+    text-shadow: 0.5rem 0.5rem rgba(rgb(216, 129, 129), 0.2);
+}
+.colored{
+    font-size: 7rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+}
 
 /* Rodape */
 .rodape {
@@ -226,7 +253,7 @@ body {
     }
     .text__titulo{
         font-size: clamp(2.8rem, -0.083rem + 8vw, 4.5rem);
-        margin: none;
+        margin: 0;
     }
     .text__texto{
         font-size: clamp(1.6rem, -0.085rem + 8vw, 2.8rem);
