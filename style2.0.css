@@ -91,10 +91,7 @@ body {
                         /* main content */
 /* =================================================================*/
 
-.principal {
 
-
-}
 .sections {
     display: flex;
     justify-content: center;
@@ -165,6 +162,40 @@ body {
     font-size: 7rem;
     margin: 1rem;
     padding: 0.5rem 1rem;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(80%, 60ch);
+    text-align: center;
+    justify-content:center;
+}
+.project__title{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 2rem;
+}
+.project__description{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+}
+.project__description strong{
+    font-weight: 900;
+    color: rgb(134, 29, 29);
+}
+.link__project{
+    text-decoration: none;
+    font-weight: 900;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: rgb(29, 130, 134);
+}
+.project__img{
+    width: min(70%, 30rem);
 }
 #contact-form{
     display: flex;
