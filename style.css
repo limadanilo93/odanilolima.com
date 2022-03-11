@@ -159,12 +159,67 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 .colored:hover{
-    text-shadow: 0.5rem 0.5rem rgba(rgb(216, 129, 129), 0.2);
+    text-shadow: 0 0 2rem rgba(161, 216, 129, 0.8);
 }
 .colored{
     font-size: 7rem;
     margin: 1rem;
     padding: 0.5rem 1rem;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+.alternate__contact{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+.contact__title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 2rem;
+}
+.informacoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+label, input{
+    margin: 1.5rem 0.5rem;
+
+}
+.perguntas{
+    font-weight: 700;
+    margin: 1rem;
+}
+.fa{
+    font-size: 4rem;
+}
+.fa-whatsapp{
+    color: green;
+}
+.alternate__contact__info{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    align-items:center;
+}
+.contato__info{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.enviar{
+    width: min(40rem, 40%);
+    align-self: center;
+}
+.enviar:hover{
+    background: rgba(129, 174, 216, 0.2);
+    box-shadow: 0 0 1.5rem rgba(148, 129, 216, 0.4);;
 }
 
 /* Rodape */
