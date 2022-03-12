@@ -167,7 +167,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: min(80%, 60ch);
+
     text-align: center;
     justify-content:center;
 }
@@ -182,10 +182,15 @@ body {
     font-weight: 500;
     line-height: 2.5rem;
     margin-top: 2rem;
+    width: min(80%, 60ch);
 }
 .project__description strong{
     font-weight: 900;
     color: rgb(134, 29, 29);
+}
+.projetos{
+    align-items: space-between;
+    justify-content: space-between;
 }
 .link__project{
     text-decoration: none;
@@ -220,17 +225,21 @@ body {
 .informacoes{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
 }
 label, input{
-    margin: 1.5rem 0.5rem;
+    margin: 1.5rem 0;
 
 }
+
 .perguntas{
     font-weight: 700;
-    margin: 1rem;
+    margin: 1rem 0.5rem;
 }
+
 .fa{
-    font-size: 4rem;
+    padding: 0.5rem;
+    font-size: 3.8rem;
 }
 .fa-whatsapp{
     color: green;
@@ -241,8 +250,8 @@ label, input{
     align-items:center;
 }
 .contato__info{
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 .enviar{
     width: min(40rem, 40%);
