@@ -118,7 +118,14 @@ body {
     font-size:1.8rem;
     font-weight: 500;
     width: min(80%, 60ch);
-    margin: 0 auto;
+    margin: 0rem auto;
+    line-height: 2.8rem;
+    text-align: justify;
+}
+.text__about__me{
+    padding: 2rem 0;
+    font-weight: 600;
+    max-width: 60ch;
 }
 .text__texto strong {
     font-weight: 900;
