@@ -1,6 +1,6 @@
 @font-face {
     font-family: montserrat;
-    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
 :root {
     font-size: 10px;
@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    background-image: url("./img/white-concrete-wall.jpg");
+    background-image: url("../img/white-concrete-wall.jpg");
     justify-content: space-between;
     font-family: montserrat, sans-serif;
 }
@@ -274,7 +274,7 @@ label, input{
     position: relative;
     bottom: 0;
     width: 100%;
-    background-image: url("./img/bg.jpg");
+    background-image: url("../img/bg.jpg");
 }
 .rodape__menu {
     display: flex;
